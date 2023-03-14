@@ -14,6 +14,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                implementation(project(":allshared"))
                 implementation(project(":breeds"))
                 api(project(":analytics"))
             }
@@ -26,10 +27,10 @@ kotlin {
         val iosMain by getting
         val iosTest by getting
         val iosSimulatorArm64Main by getting {
-            dependsOn(iosMain)
+            dependsOn(commonMain)
         }
         val iosSimulatorArm64Test by getting {
-            dependsOn(iosTest)
+            dependsOn(commonTest)
         }
     }
 
@@ -50,10 +51,10 @@ addGithubPackagesRepository()
 
 kmmbridge {
     mavenPublishArtifacts()
-    githubReleaseVersions()
+//    githubReleaseVersions()
 //    Android version is not automatically incremented in KMMBridge, so if you need it to be aligned with the iOS version
 //    use manualVersions instead of githubReleaseVersions to set version manually
-//    manualVersions()
+    manualVersions()
     spm()
 //    cocoapods("git@github.com:touchlab/PodSpecs.git")
 }
