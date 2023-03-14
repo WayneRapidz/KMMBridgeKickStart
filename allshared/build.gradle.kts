@@ -27,10 +27,10 @@ kotlin {
         val iosMain by getting
         val iosTest by getting
         val iosSimulatorArm64Main by getting {
-            dependsOn(commonMain)
+            dependsOn(iosMain)
         }
         val iosSimulatorArm64Test by getting {
-            dependsOn(commonTest)
+            dependsOn(iosTest)
         }
     }
 
