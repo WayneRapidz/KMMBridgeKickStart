@@ -1,6 +1,6 @@
-package io.rapidz.mobile
+package co.touchlab.kmmbridgekickstart
 
-import io.rapidz.mobile.Constants.MIN_LENGTH_CRYPTO_ADDRESS
+import co.touchlab.kmmbridgekickstart.Constants.MIN_LENGTH_CRYPTO_ADDRESS
 
 object CryptoAddressFactory {
     fun createCryptoAddressValidator() = CryptoAddressValidator
