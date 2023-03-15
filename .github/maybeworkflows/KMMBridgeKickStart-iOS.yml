@@ -26,4 +26,3 @@ jobs:
 
       - name: Build
         run: ./gradlew :allshared:iosX64Test
-#        run: ./gradlew :breeds:iosX64Test
