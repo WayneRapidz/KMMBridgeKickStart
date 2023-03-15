@@ -22,7 +22,11 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val iosMain by getting
+        val iosMain by getting {
+            dependencies {
+                implementation("co.touchlab:stately-concurrency:1.2.3")
+            }
+        }
         val iosTest by getting
         val iosSimulatorArm64Main by getting {
             dependsOn(iosMain)
