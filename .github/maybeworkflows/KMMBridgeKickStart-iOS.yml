@@ -25,4 +25,5 @@ jobs:
           java-version: 11
 
       - name: Build
-        run: ./gradlew :allshared:iosX64Test
+#        run: ./gradlew :allshared:iosX64Test
+        run: ./gradlew :breeds:iosX64Test

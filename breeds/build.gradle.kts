@@ -44,7 +44,6 @@ kotlin {
         }
         val iosMain by getting {
             dependencies {
-                implementation(project(":analytics"))
                 implementation(libs.sqlDelight.native)
                 implementation(libs.ktor.client.ios)
             }
