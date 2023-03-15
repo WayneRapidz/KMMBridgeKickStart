@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
                 
                 
     spec.pod_target_xcconfig = {
-        'KOTLIN_PROJECT_PATH' => ':breeds',
+        'KOTLIN_PROJECT_PATH' => ':allshared',
         'PRODUCT_MODULE_NAME' => 'KMMBridgeKickStart',
     }
                 

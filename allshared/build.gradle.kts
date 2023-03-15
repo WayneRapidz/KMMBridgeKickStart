@@ -23,17 +23,8 @@ kotlin {
                 implementation(libs.bundles.shared.commonTest)
             }
         }
-        val iosMain by getting {
-            dependencies {
-                implementation(project(":breeds"))
-                api(project(":analytics"))
-            }
-        }
-        val iosTest by getting {
-            dependencies {
-                implementation(libs.bundles.shared.commonTest)
-            }
-        }
+        val iosMain by getting
+        val iosTest by getting
         val iosSimulatorArm64Main by getting {
             dependsOn(iosMain)
         }
