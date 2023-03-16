@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
     spec.name                     = 'allshared'
-    spec.version                  = '0.2.11'
-    spec.homepage                 = 'https://www.touchlab.co'
+    spec.version                  = '0.2.12'
+    spec.homepage                 = 'https://www.rapidz.io'
     spec.source                   = { :http=> ''}
     spec.authors                  = ''
     spec.license                  = ''
