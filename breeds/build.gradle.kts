@@ -70,6 +70,6 @@ addGithubPackagesRepository()
 
 sqldelight {
     database("KMMBridgeKickStartDb") {
-        packageName = "co.touchlab.kmmbridgekickstart.db"
+        packageName = "io.rapidz.kmmbridgekickstart.db"
     }
 }
